@@ -30,7 +30,7 @@ npm run build
 
 ## 포트폴리오 콘텐츠 변경
 
-`src/projects.ts`에서 이름, 소개, 연락처와 프로젝트 목록을 수정합니다. 첫 번째 프로젝트 Guestbook은 실제 작업물이며, 나머지 5개는 CSS 모션으로 제작한 샘플입니다. Guestbook 카드에는 실제 사이트를 캡처한 6초 MP4 미리보기를 사용합니다.
+`src/projects.ts`에서 이름, 소개, 연락처와 프로젝트 목록을 수정합니다. 현재 작업물은 Guestbook 하나입니다. 새 작업은 `src/projects.ts`의 `projects` 배열 맨 앞에 추가하면 기존 작업의 왼쪽부터 표시됩니다. Guestbook 카드에는 실제 사이트를 캡처한 6초 MP4 미리보기를 사용합니다.
 
 - `profile.name`: 표시 이름
 - `profile.email`: 연락 이메일 (비워두면 준비 중 안내)
