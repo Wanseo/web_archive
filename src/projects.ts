@@ -13,7 +13,7 @@ export interface Project {
 // public 파일 경로는 앞에 / 없이 입력하세요. 예: videos/project-01.mp4
 export const profile = {
   name: 'WANSEO',
-  email: '',
+  email: 'wanseo1206@gmail.com',
   instagram: 'https://www.instagram.com/wsjoy_/',
   introduction: 'I experiment with new experiences through websites.',
 }
