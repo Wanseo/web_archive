@@ -20,7 +20,7 @@ export const profile = {
 
 // 실제 프로젝트 자료가 준비되면 아래 샘플을 교체하세요.
 export const projects: Project[] = [
-  { id: 'form', title: 'FORM & FIELD', category: 'BRAND WEBSITE', year: '2026', theme: 'form', description: '여백과 형태를 중심으로 구성한 브랜드 웹사이트의 샘플입니다. 부드럽게 움직이는 오브제로 첫인상을 만듭니다.' },
+  { id: 'guestbook', title: 'GUESTBOOK', category: 'INTERACTIVE GUESTBOOK', year: '2026', theme: 'form', description: '픽셀 그래픽과 움직이는 배경으로 만든 작은 방명록입니다. 이름과 메시지를 남기며 함께 채워가는 웹사이트입니다.', url: 'https://wanseo.github.io/myfirstweb/', video: 'videos/guestbook.mp4', poster: 'videos/guestbook.jpg' },
   { id: 'orbit', title: 'ORBIT', category: 'INTERACTIVE WEB', year: '2026', theme: 'orbit', description: '빛과 궤도의 움직임을 담은 인터랙티브 웹 샘플입니다. 반복되는 모션과 간결한 타이포그래피를 조합했습니다.' },
   { id: 'still', title: 'STILL LIFE', category: 'EDITORIAL / SHOP', year: '2026', theme: 'still', description: '일상의 사물을 담는 에디토리얼 쇼핑몰 샘플입니다. 차분한 색감과 큼직한 제품 표현으로 구성했습니다.' },
   { id: 'type', title: 'TYPE PLAY', category: 'WEB EXPERIMENT', year: '2026', theme: 'type', description: '타이포그래피를 움직임으로 확장한 웹 실험 샘플입니다. 글자가 하나의 그래픽이 되는 화면을 탐색합니다.' },
