@@ -15,7 +15,7 @@ export const profile = {
   name: 'WANSEO',
   email: '',
   instagram: '',
-  introduction: '생각을 화면으로, 화면을 경험으로. 웹사이트를 만들고, 새로운 가능성을 실험합니다.',
+  introduction: '웹사이트를 통해 새로운 경험을 실험합니다.',
 }
 
 // 실제 프로젝트 자료가 준비되면 아래 샘플을 교체하세요.

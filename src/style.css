@@ -7,5 +7,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 
 /* 제목 제거 후 소개 문구 간격 */
-.intro-bottom{margin-top:40px}
-@media(max-width:600px){.intro-bottom{margin-top:28px}}
+.intro-bottom{margin-top:12px}
+@media(max-width:600px){.intro-bottom{margin-top:10px}}
