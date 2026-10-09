@@ -13,3 +13,5 @@
 .header-brand{display:flex;flex-direction:column;gap:4px}.brand-details{display:flex;align-items:center;gap:8px;font-size:9px;letter-spacing:1px;color:#64645c}.instagram-link{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px}.instagram-link:hover{color:#171715}@media(max-width:600px){.brand-details{font-size:8px;letter-spacing:.7px}}
 
 .intro-description{display:flex;align-items:center;gap:10px}.intro-description .instagram-link{flex-shrink:0}@media(max-width:600px){.intro-description p{max-width:260px}}
+
+.intro-top{justify-content:flex-start;align-items:center;gap:10px}.intro-top .instagram-link{flex-shrink:0}
