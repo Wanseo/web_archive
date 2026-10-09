@@ -14,6 +14,6 @@
 
 .intro-description{display:flex;align-items:center;gap:10px}.intro-description .instagram-link{flex-shrink:0}@media(max-width:600px){.intro-description p{max-width:260px}}
 
-.intro-top{justify-content:flex-start;align-items:center;gap:10px}.intro-top .instagram-link{flex-shrink:0}
+.intro-top{justify-content:flex-start;align-items:center;gap:2px}.intro-top .instagram-link{flex-shrink:0}
 
 .intro-top>span{color:#000}
