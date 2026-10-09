@@ -27,3 +27,5 @@
 @media(max-width:600px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card-title{font-size:clamp(16px,4.8vw,28px)}}
 
 .work-label{font-family:inherit;font-size:13px;font-weight:400;line-height:1.6;letter-spacing:1.2px;margin-bottom:16px}@media(max-width:600px){.work-label{font-size:10px;letter-spacing:.6px}}
+
+@media(max-width:600px){.wordmark-sub{max-width:none;white-space:nowrap}}
