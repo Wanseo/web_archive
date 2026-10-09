@@ -43,3 +43,5 @@
 footer{border-top:0}
 
 .contact-menu .skill-list{min-width:240px}.contact-menu .skill-list a:hover{text-decoration:underline}.contact-menu .skill-list a{display:block}
+
+#app{min-height:100svh;display:flex;flex-direction:column}main{flex:1}footer{margin-top:auto}
