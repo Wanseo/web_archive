@@ -13,9 +13,8 @@ const card = (project: Project, index: number) => `<button class="project-card" 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <header class="header" id="top"><div class="header-brand"><a class="wordmark" href="#top">wanseo jo<span class="wordmark-sub">WEB ARCHIVE</span></a></div><nav aria-label="주 메뉴"><button data-contact>CONTACT ${arrow}</button></nav></header>
 <main><section class="intro"><div class="intro-top"><span>${escape(profile.introduction)}</span><a class="instagram-link" href="${escape(profile.instagram)}" target="_blank" rel="noopener noreferrer" aria-label="wsjoy_ 인스타그램 새 탭에서 열기"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></div></section>
-<section id="work" class="work"><a href="#work" class="work-label">WORK</a><div class="project-grid">${projects.map(card).join('')}</div><p class="demo-note">Guestbook은 실제 작업물이며, 나머지 카드는 레이아웃과 모션을 보여주는 샘플입니다.</p></section>
-<section class="about"><span class="eyebrow">A WORK IN PROGRESS, ALWAYS.</span><p>작은 아이디어도<br>좋은 웹사이트가 될 수 있으니까.</p><div class="about-bottom"><span>DESIGN. BUILD. EXPERIMENT. REPEAT.</span><button class="outline-button" data-contact>LET’S TALK ${arrow}</button></div></section></main>
-<footer><div class="footer-top"><a href="#top" class="footer-brand">${escape(profile.name)}<span>WEB ARCHIVE</span></a><button id="back-top">BACK TO TOP ↑</button></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} ${escape(profile.name)}</span><span>MADE WITH CURIOSITY.</span><button data-contact>CONTACT ${arrow}</button></div></footer>
+<section id="work" class="work"><a href="#work" class="work-label">WORK</a><div class="project-grid">${projects.map(card).join('')}</div></section></main>
+<footer><div class="footer-bottom"><span>© ${new Date().getFullYear()} ${escape(profile.name)}</span></div></footer>
 <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="close-button" aria-label="닫기">×</button><div id="dialog-content"></div></dialog>
 <dialog id="contact-dialog" aria-labelledby="contact-title"><button class="close-button" aria-label="닫기">×</button><div class="contact-content"><span class="eyebrow">HAVE SOMETHING IN MIND?</span><h2 id="contact-title">Let’s make<br><span class="serif">something.</span></h2><p>함께 만들고 싶은 웹사이트가 있나요?</p>${profile.email ? `<a class="outline-button" href="mailto:${escape(profile.email)}">${escape(profile.email)} ${arrow}</a>` : '<p class="contact-note">연락처 준비 중입니다.</p>'}${external(profile.instagram) ? `<a class="text-link" href="${escape(profile.instagram)}" target="_blank" rel="noopener noreferrer">INSTAGRAM ${arrow}</a>` : ''}</div></dialog>`
 
@@ -36,7 +35,7 @@ document.querySelectorAll<HTMLButtonElement>('[data-project]').forEach(button =>
 }))
 document.querySelectorAll('[data-contact]').forEach(button => button.addEventListener('click', () => openDialog(contactDialog)))
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)')
-document.querySelector('#back-top')!.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reducedMotion.matches ? 'instant' : 'smooth' }))
+
 const observer = new IntersectionObserver(entries => entries.forEach(entry => {
   entry.target.classList.toggle('in-view', entry.isIntersecting)
   const video = entry.target.querySelector('video')
