@@ -27,3 +27,17 @@ npm run build
 `src`의 이미지는 import로 불러오고, TypeScript에서 `public` 파일을 참조할 때는 `${import.meta.env.BASE_URL}파일명`을 사용하세요. HTML에서는 `%BASE_URL%파일명`을 사용할 수 있습니다. `/파일명` 형태의 경로를 동적으로 작성하면 저장소 하위 경로를 벗어납니다.
 
 공식 문서: [Vite 배포 가이드](https://vite.dev/guide/static-deploy.html), [GitHub Pages 배포 소스 설정](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+## 포트폴리오 콘텐츠 변경
+
+`src/projects.ts`에서 이름, 소개, 연락처와 프로젝트 목록을 수정합니다. 현재 프로젝트 6개는 CSS 모션으로 제작한 샘플이며 실제 작업물이 아닙니다.
+
+- `profile.name`: 표시 이름
+- `profile.email`: 연락 이메일 (비워두면 준비 중 안내)
+- `profile.instagram`: 전체 인스타그램 URL
+- 프로젝트 `title`, `category`, `description`, `year`: 작품 정보
+- `url`: 실제 사이트의 https URL (설정하면 상세 화면에 방문 링크 표시)
+- `video`: `public` 기준 영상 경로, 예: `videos/my-site.mp4`
+- `poster`: 자동 재생 전 표시할 이미지 경로, 예: `videos/my-site.jpg`
+
+영상을 `public/videos/`에 넣고 해당 프로젝트의 `video`에 경로를 지정하면 샘플 모션 대신 영상이 표시됩니다. 모바일용으로 짧고 압축된 H.264 MP4와 포스터 이미지를 권장합니다. 영상은 무음·반복·인라인 재생하며 화면 밖에서는 정지합니다. 브라우저가 자동 재생을 제한해도 카드 터치로 상세 화면을 열 수 있습니다. 움직임 줄이기 설정에서는 카드 애니메이션과 자동 재생을 중지합니다.
