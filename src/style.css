@@ -47,3 +47,5 @@ footer{border-top:0}
 #app{min-height:100svh;display:flex;flex-direction:column}main{flex:1}footer{margin-top:auto}
 
 .mobile-intro-break{display:none}@media(max-width:600px){.mobile-intro-break{display:block}.intro-top>span{letter-spacing:.3px}.intro-second-line{white-space:nowrap}}
+
+.header-instagram{display:none}@media(max-width:600px){.header-brand{display:flex;flex-direction:row;align-items:baseline;gap:2px}.header-instagram{display:inline-flex;width:24px;height:24px;position:relative;top:3px}.intro-instagram{display:none}}
