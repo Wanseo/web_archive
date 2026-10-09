@@ -20,5 +20,5 @@ export const profile = {
 
 // 새 작업은 배열 맨 앞에 추가하세요. 최신 작업이 왼쪽부터 표시됩니다.
 export const projects: Project[] = [
-  { id: 'guestbook', title: 'GUESTBOOK', category: 'INTERACTIVE GUESTBOOK', year: '2026', theme: 'form', description: '픽셀 그래픽과 움직이는 배경으로 만든 작은 방명록입니다. 이름과 메시지를 남기며 함께 채워가는 웹사이트입니다.', url: 'https://wanseo.github.io/myfirstweb/', video: 'videos/guestbook.mp4', poster: 'videos/guestbook.jpg' },
+  { id: 'guestbook', title: 'GUESTBOOK', category: 'INTERACTIVE GUESTBOOK', year: '2026', theme: 'form', description: '픽셀 그래픽과 움직이는 배경으로 만든 작은 방명록입니다.', url: 'https://wanseo.github.io/myfirstweb/', video: 'videos/guestbook.mp4', poster: 'videos/guestbook.jpg' },
 ]
