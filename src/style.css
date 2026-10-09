@@ -31,3 +31,5 @@
 @media(max-width:600px){.wordmark-sub{max-width:none;white-space:nowrap}}
 
 .work-label{color:#000;font-weight:700}
+
+:root{--brand-font:'Space Grotesk',sans-serif}.wordmark,.card-title,.dialog-copy h2{font-family:var(--brand-font);font-weight:700}
