@@ -21,3 +21,7 @@
 .intro-top>span{font-size:13px;line-height:1.6}@media(max-width:600px){.intro-top>span{font-size:10px}}
 
 .intro{padding-bottom:36px}.work-label{display:inline-block;font-size:22px;font-weight:700;line-height:1.2;letter-spacing:.5px;margin-bottom:12px}@media(max-width:600px){.intro{padding-bottom:28px}.work-label{font-size:18px;margin-bottom:10px}}
+
+/* PC는 3열, 모바일은 2열로 정사각형 카드 비율 유지 */
+.project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.card-title{font-size:clamp(20px,2.2vw,36px)}
+@media(max-width:600px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card-title{font-size:clamp(16px,4.8vw,28px)}}
