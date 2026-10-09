@@ -35,5 +35,3 @@
 :root{--brand-font:'Space Grotesk',sans-serif}.wordmark,.card-title,.dialog-copy h2{font-family:var(--brand-font);font-weight:700}
 
 .header{align-items:baseline}.header-brand{display:block}.header nav{align-items:baseline}.header nav button{padding-block:0;line-height:1.2}
-
-.header nav button{font-family:inherit;font-size:13px;font-weight:400;letter-spacing:1.2px;line-height:1.6;color:#000}@media(max-width:600px){.header nav button{font-size:10px;letter-spacing:.6px}}
