@@ -14,7 +14,7 @@ export interface Project {
 export const profile = {
   name: 'WANSEO',
   email: '',
-  instagram: '',
+  instagram: 'https://www.instagram.com/wsjoy_/',
   introduction: '웹사이트를 통해 새로운 경험을 실험합니다.',
 }
 
