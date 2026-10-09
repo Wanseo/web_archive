@@ -15,7 +15,7 @@ export const profile = {
   name: 'WANSEO',
   email: '',
   instagram: 'https://www.instagram.com/wsjoy_/',
-  introduction: '웹사이트를 통해 새로운 경험을 실험합니다.',
+  introduction: 'I experiment with new experiences through websites.',
 }
 
 // 실제 프로젝트 자료가 준비되면 아래 샘플을 교체하세요.
