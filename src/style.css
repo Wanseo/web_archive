@@ -33,3 +33,5 @@
 .work-label{color:#000;font-weight:700}
 
 :root{--brand-font:'Space Grotesk',sans-serif}.wordmark,.card-title,.dialog-copy h2{font-family:var(--brand-font);font-weight:700}
+
+.header{align-items:baseline}.header-brand{display:block}.header nav{align-items:baseline}.header nav button{padding-block:0;line-height:1.2}
