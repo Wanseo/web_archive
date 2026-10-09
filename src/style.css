@@ -17,3 +17,5 @@
 .intro-top{justify-content:flex-start;align-items:center;gap:2px}.intro-top .instagram-link{flex-shrink:0}
 
 .intro-top>span{color:#000}
+
+.intro-top>span{font-size:13px;line-height:1.6}@media(max-width:600px){.intro-top>span{font-size:10px}}
