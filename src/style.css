@@ -53,3 +53,5 @@ footer{border-top:0}
 @media(max-width:600px){.intro-top{gap:2px}.intro-top>span{white-space:nowrap;font-size:clamp(7px,2.2vw,12px);letter-spacing:0}.intro-instagram{display:inline-flex;width:22px;height:24px}.intro-instagram svg{width:13px;height:13px}}
 
 .coming-soon-card{aspect-ratio:1;background:#e5e5e5;display:grid;place-items:center;color:#555;font-size:16px}@media(max-width:600px){.coming-soon-card{font-size:13px}}
+
+.coming-soon-below{grid-column:2;grid-row:2}
