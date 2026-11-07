@@ -50,3 +50,7 @@ npm run build:site
 `scripts/project-sites.json`은 각 원본 저장소와 배포할 커밋을 고정합니다. 원본 프로젝트를 업데이트한 뒤 이 파일의 `revision`을 새 커밋으로 변경하고 다시 배포하세요. 빌드 스크립트는 임시 디렉터리에서 원본을 설치·빌드하고 각 하위 경로에 맞는 파일을 `dist/`에 합칩니다. canonical, Open Graph URL, sitemap도 새 주소로 변환합니다.
 
 방명록의 `publicEnv`는 기존 공개 사이트가 브라우저에 제공하던 Supabase URL과 **공개용 publishable key**입니다. 기존 데이터베이스를 그대로 사용합니다. 서버용 secret/service-role key는 여기에 넣으면 안 됩니다. 도메인이 바뀌므로 기존 도메인의 로컬 저장소에 있던 글 수정 권한은 자동으로 이전되지 않습니다.
+
+## 글꼴 로딩
+
+메인 포트폴리오의 DM Sans와 Space Grotesk는 `public/fonts/`의 WOFF2 파일을 사용하며 HTML에서 미리 로드합니다. `font-display: optional`로 느린 연결에서 표시 도중 글꼴이 교체되며 레이아웃이 움직이는 현상을 방지합니다. 각 글꼴의 SIL Open Font License도 같은 폴더에 포함되어 있습니다.
