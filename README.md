@@ -7,7 +7,7 @@ Vite vanilla-ts 기반 웹 프로젝트입니다.
 ```sh
 npm ci
 npm run dev
-npm run build
+npm run build:site
 ```
 
 빌드 결과는 `dist/`에 생성됩니다.
@@ -42,3 +42,11 @@ npm run build
 - `detailVideo`, `detailPoster`: 상세창용 고화질 영상·포스터 (생략하면 카드용 파일 사용). MOODROOM 상세 영상은 1800×1800 해상도입니다.
 
 영상을 `public/videos/`에 넣고 해당 프로젝트의 `video`에 경로를 지정하면 샘플 모션 대신 영상이 표시됩니다. 모바일용으로 짧고 압축된 H.264 MP4와 포스터 이미지를 권장합니다. 영상은 무음·반복·인라인 재생하며 화면 밖에서는 정지합니다. 브라우저가 자동 재생을 제한해도 카드 터치로 상세 화면을 열 수 있습니다. 움직임 줄이기 설정에서는 카드 애니메이션과 자동 재생을 중지합니다.
+
+## 같은 도메인의 프로젝트 사이트
+
+프로젝트 방문 링크는 `https://wanseojo.com/moodroom/`, `https://wanseojo.com/guestbook/`입니다. GitHub Actions에서 `npm run build:site`를 실행하여 포트폴리오와 두 프로젝트를 함께 배포합니다. 포트폴리오만 확인할 때는 기존 `npm run build`를 사용할 수 있습니다.
+
+`scripts/project-sites.json`은 각 원본 저장소와 배포할 커밋을 고정합니다. 원본 프로젝트를 업데이트한 뒤 이 파일의 `revision`을 새 커밋으로 변경하고 다시 배포하세요. 빌드 스크립트는 임시 디렉터리에서 원본을 설치·빌드하고 각 하위 경로에 맞는 파일을 `dist/`에 합칩니다. canonical, Open Graph URL, sitemap도 새 주소로 변환합니다.
+
+방명록의 `publicEnv`는 기존 공개 사이트가 브라우저에 제공하던 Supabase URL과 **공개용 publishable key**입니다. 기존 데이터베이스를 그대로 사용합니다. 서버용 secret/service-role key는 여기에 넣으면 안 됩니다. 도메인이 바뀌므로 기존 도메인의 로컬 저장소에 있던 글 수정 권한은 자동으로 이전되지 않습니다.

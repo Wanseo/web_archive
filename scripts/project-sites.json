@@ -1,0 +1,18 @@
+[
+  {
+    "id": "moodroom",
+    "repository": "https://github.com/Wanseo/swag2.git",
+    "revision": "740ab5ddca4d6cc6f53bf7403343f8f7010fd3fe",
+    "previousUrl": "https://wanseo.github.io/swag2/"
+  },
+  {
+    "id": "guestbook",
+    "repository": "https://github.com/Wanseo/myfirstweb.git",
+    "revision": "011ec8694303275ee231f2ba06041ec89d0a1c40",
+    "previousUrl": "https://wanseo.github.io/myfirstweb/",
+    "publicEnv": {
+      "VITE_SUPABASE_URL": "https://ftnwtirfdxowgkmpoasp.supabase.co",
+      "VITE_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_elbkbdZ_LLs_d0_yIFy4sg_5eVCvwFd"
+    }
+  }
+]
